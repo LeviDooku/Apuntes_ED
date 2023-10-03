@@ -1,7 +1,9 @@
 # Apuntes_ED
 
 Apuntes que voy recopilando de las clases tanto teóricas como prácticas de la asignatura Estructuras de Datos
-de 2º de Ingeniería Informática de la UGR (primer cuatrimestre).
+de 2º de Ingeniería Informática de la UGR (primer cuatrimestre).  
+  
+Todos los directorios tiene su respectiva documentación generada con Doxygen, ya que es obligatorio en esta asignatura.
 
 ## Tema 1 (Eficiencia)
 
