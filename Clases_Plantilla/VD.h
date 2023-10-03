@@ -3,6 +3,9 @@
 *
 **/
 
+#ifndef VD
+#define VD
+
 //VD = Vector Dinámico
 
 class VD{
@@ -73,10 +76,8 @@ public:
 	**/ 
 
 	T & operator[] (int i);
-
-
-
-
-
-
 }
+
+#include "VD.cpp"
+
+#endif
