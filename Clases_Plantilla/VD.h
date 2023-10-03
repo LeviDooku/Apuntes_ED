@@ -41,4 +41,42 @@ public:
 
 	VD(const VD<T>, &otro);
 
+	/**
+	* @brief Destructor
+	*
+	**/	
+
+	~VD();
+
+	/**
+	* @brief Sobrecarga del operator =
+	*
+	* @param otro Vector dinámico
+	*
+	**/ 
+
+	VD & operator=(const VD<T> &otro);
+
+	/**
+	* @brief Inserta un elemento 'nuevo' de tipo 'T' en la posición 'pos'
+	*
+	* @param pos Posición en la que se insertará el nuevo elemento
+	* @param nuevo Elemento a insertar
+	**/ 
+
+	void Insertar(int pos, const T & nuevo);
+
+	/**
+	* @brief Sobrecarga del operator '[]'
+	*
+	* @param i Entero a asignar
+	**/ 
+
+	T & operator[] (int i);
+
+
+
+
+
+
 }
