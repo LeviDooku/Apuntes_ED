@@ -1,0 +1,110 @@
+\doxysection{VD.\+cpp}
+\hypertarget{_v_d_8cpp_source}{}\label{_v_d_8cpp_source}\mbox{\hyperlink{_v_d_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_v_d_8h}{VD.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include<iostream>}}
+\DoxyCodeLine{00008\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{comment}{//Implementación\ de\ los\ métodos}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_v_d}{VD<T>::Resize}}(\textcolor{keywordtype}{int}\ nuevo\_tam)\{}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ T\ *\ aux\ =\ \textcolor{keyword}{new}\ T[nuevo\_tam];}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{int}\ minimo\ =\ (n\ <\ nuevo\_tam)?:nuevo\_tam;}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ \ \ \ int\ minimo\ =\ (n\ <\ nuevo\_tam)?:nuevo\_tam;}}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ \ \ \ }}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ \ \ \ =}}
+\DoxyCodeLine{00023\ \textcolor{comment}{}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ \ \ \ int\ minimo;}}
+\DoxyCodeLine{00025\ \textcolor{comment}{}}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ \ \ \ if\ (n\ <\ nuevo\_tam)\ \{}}
+\DoxyCodeLine{00027\ \textcolor{comment}{\ \ \ \ \ \ \ \ minimo\ =\ nuevo\_tam;}}
+\DoxyCodeLine{00028\ \textcolor{comment}{\ \ \ \ \}\ }}
+\DoxyCodeLine{00029\ \textcolor{comment}{\ \ \ \ else\ \{}}
+\DoxyCodeLine{00030\ \textcolor{comment}{\ \ \ \ \ \ \ \ minimo\ =\ n;}}
+\DoxyCodeLine{00031\ \textcolor{comment}{\ \ \ \ \}}}
+\DoxyCodeLine{00032\ \textcolor{comment}{\ \ \ \ */}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ minimo;\ i++)\{}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ *(aux\ +\ i)\ =\ *(datos\ +\ i);}
+\DoxyCodeLine{00036\ \ \ \ \ \}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{delete}\ []\ datos;}
+\DoxyCodeLine{00039\ \ \ \ \ datos\ =\ aux;}
+\DoxyCodeLine{00040\ \ \ \ \ reservados\ =\ nuevo\_tam;}
+\DoxyCodeLine{00041\ \ \ \ \ n\ =\ minimo;}
+\DoxyCodeLine{00042\ \}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \mbox{\hyperlink{class_v_d_af194ab5af7cd2e82314d3b2e9ea8f6c5}{VD<T>::VD}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_v_d}{VD<T>}},\ \&otro)\{}
+\DoxyCodeLine{00047\ \ \ \ \ reservados\ =\ otro.reservados;}
+\DoxyCodeLine{00048\ \ \ \ \ n\ =\ otro.n;}
+\DoxyCodeLine{00049\ \ \ \ \ datos\ =\ \textcolor{keyword}{new}\ T[reservados];}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ n;\ i++)\{}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ *(datos\ +\ i)\ =\ *(otro.datos\ +\ i);}
+\DoxyCodeLine{00053\ \ \ \ \ \}}
+\DoxyCodeLine{00054\ \}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \mbox{\hyperlink{class_v_d_a20d0214eca18622092438c04ca3c6aa0}{VD<T>::\string~VD}}()\{}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordflow}{if}(datos\ !=\ \textcolor{keyword}{nullptr})\{}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ []\ datos;}
+\DoxyCodeLine{00061\ \ \ \ \ \}}
+\DoxyCodeLine{00062\ \}}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \mbox{\hyperlink{class_v_d}{VD<T>::VD}}<T>\ \&\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_v_d}{VD<T>}}\ \&\ otro)\{}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordflow}{if}(\textcolor{keyword}{this}\ !=\ \&otro)\{}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(datos\ !=\ 0)\{}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ []\ datos;}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ n;\ i++)}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ *(datos\ +\ i)\ =\ *(otro\ +\ i);}
+\DoxyCodeLine{00073\ \ \ \ \ \}}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordflow}{return}\ *\ \textcolor{keyword}{this};}
+\DoxyCodeLine{00075\ \}}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_v_d_a0df44323faef1cb84e14bb4a47e9a5b7}{VD<T>::Insertar}}(\textcolor{keywordtype}{int}\ pos,\ \textcolor{keyword}{const}\ T\ \&nuevo)\{}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordflow}{if}(n\ ==\ reservados)\{}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ Resize(2*reservados);}
+\DoxyCodeLine{00082\ \ \ \ \ \}}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ n\ -\/\ 1;\ i\ >=\ pos;\ i-\/-\/)\{}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ *(datos\ +\ (i+1))\ =\ *(datos\ +\ i);}
+\DoxyCodeLine{00086\ \ \ \ \ \}}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \ \ \ \ *(datos\ +\ pos)\ =\ nuevo;}
+\DoxyCodeLine{00089\ \ \ \ \ n++;}
+\DoxyCodeLine{00090\ \}}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_v_d}{VD<T>::Borrar}}(\textcolor{keywordtype}{int}\ pos)\{}
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ pos;\ i\ <\ n-\/1;\ i++)}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ *(datos\ +\ i)\ =\ *(datos\ +\ (i+1));}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \ \ \ \ n-\/-\/;}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordflow}{if}(n\ <\ reservados/4)}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ Resize(reservados/2);}
+\DoxyCodeLine{00102\ \}}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ T\ \&\ \mbox{\hyperlink{class_v_d_a50ae439f2dbeb80574f2cfbb18ea459a}{VD<T>::operator[]}}(\textcolor{keywordtype}{int}\ i)\{}
+\DoxyCodeLine{00107\ \ \ \ \ assert(i\ >=\ 0\ \&\&\ i\ <\ n);}
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keywordflow}{return}\ *(datos\ +\ i);}
+\DoxyCodeLine{00109\ \}}
+
+\end{DoxyCode}

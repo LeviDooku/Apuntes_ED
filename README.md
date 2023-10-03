@@ -23,5 +23,5 @@ Todos los directorios tiene su respectiva documentación generada con Doxygen, y
 		- [`Ejemplos.cpp`](Funciones_Plantilla/Ejemplos.cpp): Contiene una serie de funciones plantilla y un pequeño programa para probar su funcionamiento.  
 
 	- Clases plantilla: 
-		- []()
-		- []()
+		- [`VD.h`](Clases_Plantilla/VD.h)
+		- [`VD.cpp`](Clases_Plantilla/VD.cpp)
