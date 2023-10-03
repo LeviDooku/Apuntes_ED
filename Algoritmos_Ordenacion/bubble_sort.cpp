@@ -1,6 +1,15 @@
-//Suponemos en este caso un array con N elementos de la siguiente forma:
+/**
+* @file bubble_sort.cpp
+*
+**/
 
-//int *v; int n;
+
+/**
+* @brief Intercambia dos variables tipo entero
+*
+* @param a La primera variable a intercambiar
+* @param a La segunda variable a intercambiar
+**/
 
 void Intercambia(int &a, int &b) {
         int aux = a;
@@ -8,7 +17,12 @@ void Intercambia(int &a, int &b) {
         b = aux;
 }
 
-//Ordenamos este array usando el algoritmo de burbuja
+/**
+* @brief Ordena un vector de enteros 'v' con 'n' elementos, por medio del algoritmo de burbuja
+*
+* @param v Puntero a enteros que apunta a la primera posición del vector a ordenar
+* @param n Número de elementos del vector
+**/
 
 void Bubble_sort(int *v, int n) {
 	for(int i = 0; i < n-1; i++){

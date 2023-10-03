@@ -1,0 +1,58 @@
+\doxysection{merge\+\_\+sort.\+cpp File Reference}
+\hypertarget{merge__sort_8cpp}{}\label{merge__sort_8cpp}\index{merge\_sort.cpp@{merge\_sort.cpp}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{merge__sort_8cpp_ab8cca1feb556ecebe60ed113f3bf5a90}{Fusion}} (int \texorpdfstring{$\ast$}{*}vout, int \texorpdfstring{$\ast$}{*}vi, int \texorpdfstring{$\ast$}{*}vd, int ni, int nd)
+\begin{DoxyCompactList}\small\item\em Fusiona dos vectores de enteros \textquotesingle{}vi\textquotesingle{} y \textquotesingle{}vd\textquotesingle{} en uno \textquotesingle{}vout\textquotesingle{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{merge__sort_8cpp_a8d115979a2fd1bd7a568a15bee4794b7}{Merge\+\_\+\+Sort}} (int \texorpdfstring{$\ast$}{*}v, int n)
+\begin{DoxyCompactList}\small\item\em Ordena un vector de enteros \textquotesingle{}v\textquotesingle{} con \textquotesingle{}n\textquotesingle{} elementos, por medio del algoritmo Merge Sort. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{merge__sort_8cpp_ab8cca1feb556ecebe60ed113f3bf5a90}\label{merge__sort_8cpp_ab8cca1feb556ecebe60ed113f3bf5a90} 
+\index{merge\_sort.cpp@{merge\_sort.cpp}!Fusion@{Fusion}}
+\index{Fusion@{Fusion}!merge\_sort.cpp@{merge\_sort.cpp}}
+\doxysubsubsection{\texorpdfstring{Fusion()}{Fusion()}}
+{\footnotesize\ttfamily void Fusion (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{vout,  }\item[{int \texorpdfstring{$\ast$}{*}}]{vi,  }\item[{int \texorpdfstring{$\ast$}{*}}]{vd,  }\item[{int}]{ni,  }\item[{int}]{nd }\end{DoxyParamCaption})}
+
+
+
+Fusiona dos vectores de enteros \textquotesingle{}vi\textquotesingle{} y \textquotesingle{}vd\textquotesingle{} en uno \textquotesingle{}vout\textquotesingle{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vout} & Puntero a enteros que apunta a la primera posición del vector resultado de la fusion \\
+\hline
+{\em vi} & Puntero a enteros que apunta a la primera posición del primer vector a fusionar \\
+\hline
+{\em vd} & Puntero a enteros que apunta a la primera posición del segundo vector fusionar \\
+\hline
+{\em ni} & Número de elementos del vector \textquotesingle{}vi\textquotesingle{} \\
+\hline
+{\em nd} & Núemro de elementos del vector \textquotesingle{}vd\textquotesingle{}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+
+\begin{DoxyItemize}
+\item Los dos arrays a fusionar deben estar previamente ordenados 
+\end{DoxyItemize}
+\end{DoxyPrecond}
+\Hypertarget{merge__sort_8cpp_a8d115979a2fd1bd7a568a15bee4794b7}\label{merge__sort_8cpp_a8d115979a2fd1bd7a568a15bee4794b7} 
+\index{merge\_sort.cpp@{merge\_sort.cpp}!Merge\_Sort@{Merge\_Sort}}
+\index{Merge\_Sort@{Merge\_Sort}!merge\_sort.cpp@{merge\_sort.cpp}}
+\doxysubsubsection{\texorpdfstring{Merge\_Sort()}{Merge\_Sort()}}
+{\footnotesize\ttfamily void Merge\+\_\+\+Sort (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{v,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Ordena un vector de enteros \textquotesingle{}v\textquotesingle{} con \textquotesingle{}n\textquotesingle{} elementos, por medio del algoritmo Merge Sort. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Puntero a enteros que apunta a la primera posición del vector a ordenar \\
+\hline
+{\em n} & Número de elementos del vector \\
+\hline
+\end{DoxyParams}

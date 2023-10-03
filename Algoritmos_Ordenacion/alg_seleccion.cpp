@@ -1,6 +1,14 @@
-//Suponemos en este caso un array con N elementos de la siguiente forma:
+/**
+* @file alg_seleccion.cpp
+*
+**/
 
-//int *v; int n;
+/**
+* @brief Intercambia dos variables tipo entero
+*
+* @param a La primera variable a intercambiar
+* @param a La segunda variable a intercambiar
+**/
 
 void Intercambia(int &a, int &b)
 {
@@ -8,6 +16,13 @@ void Intercambia(int &a, int &b)
 	a = b;
 	b = aux;
 }
+
+/**
+* @brief Ordena un vector de enteros 'v' con 'n' elementos, por medio del algoritmo de seleccion
+*
+* @param v Puntero a enteros que apunta a la primera posición del vector a ordenar
+* @param n Número de elementos del vector
+**/
 
 void Ordena_Seleccion(int *v, int n)
 {

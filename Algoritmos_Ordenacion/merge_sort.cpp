@@ -1,10 +1,20 @@
-//Suponemos en este caso un array con N elementos de la siguiente forma:
+/**
+* @file merge_sort.cpp
+*
+**/
 
-//int *v; int n;
-
-//Usamos el merge sort para ordenar un array
-
-//Función para fusionar dos arrays previamente ordenados
+/**
+* @brief Fusiona dos vectores de enteros 'vi' y 'vd' en uno 'vout'
+*
+* @param vout Puntero a enteros que apunta a la primera posición del vector resultado de la fusion
+* @param vi Puntero a enteros que apunta a la primera posición del primer vector a fusionar
+* @param vd Puntero a enteros que apunta a la primera posición del segundo vector fusionar
+* @param ni Número de elementos del vector 'vi'
+* @param nd Núemro de elementos del vector 'vd'
+*
+* @pre
+*	- Los dos arrays a fusionar deben estar previamente ordenados
+**/
 
 void Fusion(int *vout, int *vi, int *vd, int ni, int nd)
 {
@@ -31,6 +41,13 @@ void Fusion(int *vout, int *vi, int *vd, int ni, int nd)
 		i_der++; i_out;
 	}
 }
+
+/**
+* @brief Ordena un vector de enteros 'v' con 'n' elementos, por medio del algoritmo Merge Sort
+*
+* @param v Puntero a enteros que apunta a la primera posición del vector a ordenar
+* @param n Número de elementos del vector
+**/
 
 void Merge_Sort(int *v, int n)
 {

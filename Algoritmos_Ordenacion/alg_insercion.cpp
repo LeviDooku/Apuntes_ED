@@ -1,8 +1,14 @@
-//Suponemos en este caso un array con N elementos de la siguiente forma:
+/**
+* @file alg_insercion.cpp
+*
+**/
 
-//int *v; int n;
-
-//Ordenamos este array usando el algoritmo de inserción
+/**
+* @brief Ordena un vector de enteros 'v' con 'n' elementos, por medio del algoritmo de insercion
+*
+* @param v Puntero a enteros que apunta a la primera posición del vector a ordenar
+* @param n Número de elementos del vector
+**/
 
 void Ordena_Insercion(int *v, int n)
 {
