@@ -20,4 +20,8 @@ Todos los directorios tiene su respectiva documentación generada con Doxygen, y
 - Algoritmos pertenecientes al Tema 2:  
 
 	- Funciones plantilla:
-		- [`Ejemplos.cpp`](Funciones_Plantilla/Ejemplos.cpp): Contiene una serie de funciones plantilla y un pequeño programa para probar su funcionamiento
+		- [`Ejemplos.cpp`](Funciones_Plantilla/Ejemplos.cpp): Contiene una serie de funciones plantilla y un pequeño programa para probar su funcionamiento.  
+
+	- Clases plantilla: 
+		- []()
+		- []()
