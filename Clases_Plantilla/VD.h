@@ -69,7 +69,7 @@ public:
 	*
 	**/ 
 
-	void Insertar(int pos, const T & nuevo);
+	void Insertar(int pos, const T &nuevo);
 
 	/**
 	* @brief Sobrecarga del operator '[]'
@@ -87,7 +87,7 @@ public:
 	*
 	**/ 	
 
-	const T & operator[](int i) const
+	const T & operator[](int i) const;
 
  	/**
 	* @brief Método que devuelve el tamaño del vector dinámico
