@@ -1,0 +1,38 @@
+\doxysection{Pila\+\_\+v.\+cpp}
+\hypertarget{_pila__v_8cpp_source}{}\label{_pila__v_8cpp_source}\mbox{\hyperlink{_pila__v_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include<vector>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_pila__v_8h}{Pila\_v.h}}"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_pila_a13525e8869c1e9e4aec2d414c570918f}{Pila<T>::empty}}()\textcolor{keyword}{\ const}\{}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordflow}{return}\ datos.size()==0;}
+\DoxyCodeLine{00013\ \}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_pila_ac97dab96795c6e5511943b06448fed04}{Pila<T>::size}}()\textcolor{keyword}{\ const}\{}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordflow}{return}\ datos.size();}
+\DoxyCodeLine{00019\ \}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pila_a3cc20fe29cdc3ae8cce10f5fd64ac4bc}{Pila<T>::pop}}()\{}
+\DoxyCodeLine{00024\ \ \ \ \ datos.pop\_back();}
+\DoxyCodeLine{00025\ \}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pila_acc56b9603ab8af7979813c201156f0af}{Pila<T>::push}}(\textcolor{keyword}{const}\ T\ \&c)\{}
+\DoxyCodeLine{00030\ \ \ \ \ datos.push\_back(c);}
+\DoxyCodeLine{00031\ \}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ T\ \mbox{\hyperlink{class_pila_a26607f6e3c8eca957337a1ab39062342}{Pila<T>::top}}()\textcolor{keyword}{\ const}\{}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordflow}{return}\ datos[datos.size()\ -\/\ 1];}
+\DoxyCodeLine{00037\ \}}
+
+\end{DoxyCode}
