@@ -8,11 +8,13 @@
 #ifndef PILA
 #define PILA
 
+template <class T>
+
 class Pila{
 
 private:
 
-	T * datos;
+	std::vector<T> datos;
 
 public:
 
@@ -44,7 +46,7 @@ public:
 	*
 	**/
 
-	void push(T &c);
+	void push(const T &c);
 
 	/**
 	* @brief Método que devuelve el elemento en el tope de la pila
@@ -53,7 +55,7 @@ public:
 	**/
 
 	T top() const;
-}
+};
 
 #include "Pila_v.cpp"
 

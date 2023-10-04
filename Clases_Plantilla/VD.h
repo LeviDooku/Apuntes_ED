@@ -8,6 +8,8 @@
 
 //VD = Vector Dinámico
 
+template <class T>
+
 class VD{
 
 private: 
@@ -97,7 +99,7 @@ public:
  	**/
 
  	int size () const;
-}
+};
 
 #include "VD.cpp"
 

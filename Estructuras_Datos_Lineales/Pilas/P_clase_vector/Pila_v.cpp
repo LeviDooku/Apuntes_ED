@@ -4,6 +4,7 @@
 **/
 
 #include<vector>
+#include "Pila_v.h"
 
 template <class T>
 
@@ -25,8 +26,8 @@ void Pila<T>::pop(){
 
 template <class T>
 
-void Pila<T>::push(T &c){
-	datos.push_back();
+void Pila<T>::push(const T &c){
+	datos.push_back(c);
 }
 
 template <class T>
