@@ -48,6 +48,8 @@ int main(){
 	a | l | o | H <- TOPE 
 	*/
 
+	cout << "Se muestra contenido de la pila p: " << endl;
+
 	while(!p.empty()){
 		cout << p.top();
 		aux.push(p.top());
@@ -57,6 +59,8 @@ int main(){
 	/*
 	La salida ahora será la correcta
 	*/
+
+	cout << "Se muestra contenido de la pila auxiliar: " << endl;
 
 	while(!q.empty()){
 		cout << aux.top();
