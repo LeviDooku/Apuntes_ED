@@ -15,7 +15,7 @@ Todos los directorios tiene su respectiva documentación generada con Doxygen, y
 		- [`bubble_sort.cpp`](Algoritmos_Ordenacion/bubble_sort.cpp): Contiene a función de ordeación mediante bubble sort de un vector de enteros. O(n^2)
 		- [`merge_sort.cpp`](Algoritmos_Ordenacion/merge_sort.cpp): Contiene a función de ordeación mediante merge sort de un vector de enteros. O(n log n)
 
-## Tema 2 (Abstracción)
+## Tema 2 (Abstracción) / Tema 3 (Templates)
 
 - Algoritmos pertenecientes al Tema 2:  
 
