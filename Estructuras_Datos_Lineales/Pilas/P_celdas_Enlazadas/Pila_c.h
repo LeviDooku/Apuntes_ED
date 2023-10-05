@@ -16,6 +16,14 @@ class Pila{
 private: 
 
 	Celda * primera;
+
+	/**
+	* @brief Método privado que copia el contenido de una pila en otra
+	*
+	* @param P La pila a ser copiada
+	*
+	**/
+	
 	void copiar(const Pila &P);
 
 public:
