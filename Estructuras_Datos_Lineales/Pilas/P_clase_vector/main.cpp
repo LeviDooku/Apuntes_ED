@@ -62,7 +62,7 @@ int main(){
 
 	cout << "Se muestra contenido de la pila auxiliar: " << endl;
 
-	while(!q.empty()){
+	while(!aux.empty()){
 		cout << aux.top();
 		aux.pop();
 	}
