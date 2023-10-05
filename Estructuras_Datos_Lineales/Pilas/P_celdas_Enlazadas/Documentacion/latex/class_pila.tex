@@ -1,0 +1,107 @@
+\doxysection{Pila Class Reference}
+\hypertarget{class_pila}{}\label{class_pila}\index{Pila@{Pila}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_pila_a4c65fb362f256b842e64228131f28e07}\label{class_pila_a4c65fb362f256b842e64228131f28e07} 
+{\bfseries Pila} ()
+\begin{DoxyCompactList}\small\item\em Constructor vacío. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pila_ae1b786a7d4cd8edabcd13262170a7e3d}{Pila}} (const \mbox{\hyperlink{class_pila}{Pila}} \&P)
+\begin{DoxyCompactList}\small\item\em Constructor de copia. \end{DoxyCompactList}\item 
+\Hypertarget{class_pila_ac697d531e81671d15483276e8fe61335}\label{class_pila_ac697d531e81671d15483276e8fe61335} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Pila} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\Hypertarget{class_pila_a35f1e240febf9d5bf886798bfa0f1fee}\label{class_pila_a35f1e240febf9d5bf886798bfa0f1fee} 
+\mbox{\hyperlink{class_pila}{Pila}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_pila}{Pila}} \&P)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operator =. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_pila_a3bee7ca85190f88b3d92d0564a950d92}{empty}} () const
+\item 
+char \mbox{\hyperlink{class_pila_af302046f4df326ad232ea91910cfbb74}{top}} () const
+\begin{DoxyCompactList}\small\item\em Método que devuelve el elemento en el tope de la pila. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pila_a6867f6784263a4461a54653591443917}{push}} (char c)
+\item 
+void \mbox{\hyperlink{class_pila_a81d09f97e002ddd279bf43b93b0cb372}{pop}} ()
+\item 
+int \mbox{\hyperlink{class_pila_a2c0b713044a8cd9469d0c6602661843b}{size}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_pila_ae1b786a7d4cd8edabcd13262170a7e3d}\label{class_pila_ae1b786a7d4cd8edabcd13262170a7e3d} 
+\index{Pila@{Pila}!Pila@{Pila}}
+\index{Pila@{Pila}!Pila@{Pila}}
+\doxysubsubsection{\texorpdfstring{Pila()}{Pila()}}
+{\footnotesize\ttfamily Pila\+::\+Pila (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_pila}{Pila}} \&}]{P }\end{DoxyParamCaption})}
+
+
+
+Constructor de copia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & La pila a ser copiada \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pila_a3bee7ca85190f88b3d92d0564a950d92}\label{class_pila_a3bee7ca85190f88b3d92d0564a950d92} 
+\index{Pila@{Pila}!empty@{empty}}
+\index{empty@{empty}!Pila@{Pila}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily bool Pila\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+@breif Método que comprueba si la pila está o no vacía
+
+\begin{DoxyReturn}{Returns}
+"{}true"{} si está vacía, "{}false"{} en caso contrario 
+\end{DoxyReturn}
+\Hypertarget{class_pila_a81d09f97e002ddd279bf43b93b0cb372}\label{class_pila_a81d09f97e002ddd279bf43b93b0cb372} 
+\index{Pila@{Pila}!pop@{pop}}
+\index{pop@{pop}!Pila@{Pila}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily void Pila\+::pop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+@breif Método que borra el elemento en el tope de la pila \Hypertarget{class_pila_a6867f6784263a4461a54653591443917}\label{class_pila_a6867f6784263a4461a54653591443917} 
+\index{Pila@{Pila}!push@{push}}
+\index{push@{push}!Pila@{Pila}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily void Pila\+::push (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
+
+@breif Método que inserta un elemento al prinicipio de la pila
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & El elemento a insertar en la pila \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pila_a2c0b713044a8cd9469d0c6602661843b}\label{class_pila_a2c0b713044a8cd9469d0c6602661843b} 
+\index{Pila@{Pila}!size@{size}}
+\index{size@{size}!Pila@{Pila}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily int Pila\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+@breif Método que devuelve el número de elementos de la pila
+
+\begin{DoxyReturn}{Returns}
+El tamaño (número de elementos) de la pila 
+\end{DoxyReturn}
+\Hypertarget{class_pila_af302046f4df326ad232ea91910cfbb74}\label{class_pila_af302046f4df326ad232ea91910cfbb74} 
+\index{Pila@{Pila}!top@{top}}
+\index{top@{top}!Pila@{Pila}}
+\doxysubsubsection{\texorpdfstring{top()}{top()}}
+{\footnotesize\ttfamily char Pila\+::top (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Método que devuelve el elemento en el tope de la pila. 
+
+\begin{DoxyReturn}{Returns}
+El elemento en el tope de la pila 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_pila__c_8h}{Pila\+\_\+c.\+h}}\item 
+\mbox{\hyperlink{_pila__c_8cpp}{Pila\+\_\+c.\+cpp}}\end{DoxyCompactItemize}
