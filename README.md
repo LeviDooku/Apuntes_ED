@@ -37,12 +37,13 @@ Compilación: Debido a que el fichero `.h` está incluyendo a su vez el fichero 
 		- [`Ejemplos.cpp`](Funciones_Plantilla/Ejemplos.cpp): Contiene una serie de funciones plantilla y un pequeño programa para probar su funcionamiento.  
 
 	- Clases plantilla: 
-		- [`VD.h`](Clases_Plantilla/VD.h)
-		- [`VD.cpp`](Clases_Plantilla/VD.cpp)
+		- [`VD.h`](Clases_Plantilla/VD.h): Fichero con la declaración de una clase plantilla VD (vector dinámico) 
+		- [`VD.cpp`](Clases_Plantilla/VD.cpp): Fichero con la implementación de los métodos de la clase VD (vector dinámico)
 
 ## Tema 4 (Estructuras de datos lineales)
 
 - Pilas:  
 
 	- [P_clase_vector](Estructuras_Datos_Lineales/Pilas/P_clase_vector): Implementación de una clase template Pila, cuyos métodos están implementados usando la clase `vector`. Se incluye un archivo `main.cpp` con un programa simple de prueba.
+	- [P_celdas_Enlazadas](Estructuras_Datos_Lineales/Pilas/P_celdas_Enlazadas): Implementación de una pila que almacena tipos `char` mediante celdas enlazadas.
 

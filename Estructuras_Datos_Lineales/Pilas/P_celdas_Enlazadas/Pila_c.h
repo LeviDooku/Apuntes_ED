@@ -23,8 +23,15 @@ private:
 	* @param P La pila a ser copiada
 	*
 	**/
-	
+
 	void copiar(const Pila &P);
+
+	/**
+	* @brief Método privado para borrar una pila
+	*
+	**/
+	
+	void borrar();
 
 public:
 

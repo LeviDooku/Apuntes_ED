@@ -32,3 +32,43 @@ void Pila::copiar(const Pila &P){
 	}
 }
 
+void Pila::borrar(){
+	while(primera != nullptr){
+		Celda * aux = primera; //Se crea un puntero que retendrá la dirección de memoria de la celda a borrar
+		primera = primera -> sig; //Primera pasa a almacenar la dirección de la celda siguiente 
+		delete aux; //Se borra la celda auxiliar, que realmente era la anterior a la que ahora apunta primera
+	}
+}
+
+Pila::Pila(const Pila &P){
+	copiar(P);
+}
+
+Pila::~Pila(){
+	borrar();
+}
+
+Pila & operator=(const Pila &P){
+	if(this != &P){ //Si las pilas son distintas
+		borrar();	//Se borra la pila actual
+		copiar(P);	//Y se usa el método copiar para crear una nueva pila igual al argumento
+	}
+
+	return * this; //Se devuelve una referencia esta nueva pila
+}
+
+
+bool Pila::empty() const{
+	return primera == nullptr;
+}
+
+
+
+
+
+
+
+
+
+
+
