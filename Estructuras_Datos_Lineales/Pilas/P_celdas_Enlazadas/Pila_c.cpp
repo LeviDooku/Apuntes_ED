@@ -57,14 +57,27 @@ Pila & operator=(const Pila &P){
 	return * this; //Se devuelve una referencia esta nueva pila
 }
 
-
 bool Pila::empty() const{
 	return primera == nullptr;
 }
 
+char Pila::top() const{
+	assert(primera != nullptr) //Se verifica esta condición en tiempo de ejecución
+	return primera -> d;
+}
 
+void Pila::push(char c){
+	Celda * aux = new Celda; //Se crea una celda auxiliar
+	aux -> d = c; //El elemento almacenado en la primera celda de aux pasa a ser 'c'
+	aux -> sig = primera; //La siguiente celda de la auxiliar pasa a ser primera
+	primera = aux; //Finalmente primera pasa a ser aux, que es la siguiente celda en la pila
+}
 
-
+void Pila::pop(){
+	Celda * aux = primera;
+	primera = primera -> sig;
+	delete aux;
+}
 
 
 
