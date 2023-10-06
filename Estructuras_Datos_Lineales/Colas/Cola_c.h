@@ -112,15 +112,6 @@ public:
 };
 
 
-
-
-
-
-
-
-
-
-
-
+#include "Cola_c.cpp"
 
 #endif
