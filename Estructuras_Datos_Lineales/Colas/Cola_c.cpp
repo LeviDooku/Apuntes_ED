@@ -8,12 +8,32 @@
 template<class T>
 
 void Cola<T>::copiar(const Cola<T> &c){
+	if(c.primera == nullptr){
+		primera = nullptr;
+		ultima = nullptr;
+	}
+	else{
+		primera = new Celda(c.primera -> dato, nullptr);
+		ultima = primera;
+		Celda<T> q = c.primera -> sig;
 
+		while(q != nullptr){
+			ultima -> sig = new Celda(q -> dato, nullptr);
+			ultima = ultima -> sig;
+			q = q -> sig;
+		}
+	}
 }
 
 template<class T>
 
 void Cola<T>::borrar(){
+	while(primera != nullptr){
+		Celda * aux= primera;
+		primera = primera -> sig;
+		delete aux;
+	}
+	ultima = 0;
 }
 
 template<class T>
@@ -68,7 +88,15 @@ void Cola<T>::pop(){
 template<class T>
 
 void Cola<T>::push(const T& c){
-
+	Celda<T> * aux = new Celda(c, nullptr);
+	if(primera == nullptr){
+		primera = aux;
+		ultima = aux;
+	}
+	else{
+		ultima -> sig = aux;
+		ultima = aux;
+	}
 }
 
 template<class T>
