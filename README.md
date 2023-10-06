@@ -19,6 +19,10 @@ En el fichero que contenga `main`: Incluimos el fichero `.h`.
 
 Compilación: Debido a que el fichero `.h` está incluyendo a su vez el fichero con la implementación de las funciones, no es necesario compilar el último mencionado. Es decir, si tenemos un proyecto que contiene: `Ejemplo.h`, `Ejemplo.cpp` y `main.cpp`, podemos compilar haciendo simplemente: `g++ main.cpp -o programa`.
 
+- Origen del código:
+
+Como indica en el nombre del repositorio, el código presente en estos archivos no es mío. Lo he sacado de las transparencias/apuntes y diversos recursos que se nos brindan en esta asignatura. El objetivo de este repositorio es meramente formar un recopilatorio.
+
 ## Tema 1 (Eficiencia)
 
 - Algoritmos pertenecientes al Tema 1:  

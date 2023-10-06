@@ -5,6 +5,9 @@
 
 //Como aún no controlo del todo las celdas enlazadas, haremos una pila de caracteres
 
+#ifndef PILA
+#define PILA
+
 struct Celda
 {
 	char d; 
@@ -107,5 +110,6 @@ public:
 	**/
 
 	int size() const;
-
 }
+
+#endif
