@@ -17,7 +17,7 @@ private:
 	struct Celda{
 		T dato;
 		Celda * sig;
-		Celda(const T &d; Celda *s){
+		Celda(const T &d, Celda *s){
 			dato = d;
 			sig = s;
 		}

@@ -15,7 +15,7 @@ void Cola<T>::copiar(const Cola<T> &c){
 	else{
 		primera = new Celda(c.primera -> dato, nullptr);
 		ultima = primera;
-		Celda<T> q = c.primera -> sig;
+		Celda<T> * q = c.primera -> sig;
 
 		while(q != nullptr){
 			ultima -> sig = new Celda(q -> dato, nullptr);
