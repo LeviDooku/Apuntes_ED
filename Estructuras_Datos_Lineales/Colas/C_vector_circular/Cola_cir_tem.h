@@ -23,7 +23,22 @@ private:
 
 	//Métodos privados
 
+	/**
+	* @brief Método privado que agranda o acorta la cola en función de la necesidad
+	*
+	* @param n_tam Tamaño que se le agregará a la cola
+	*
+	**/
+
 	void resize(int n_tam);
+
+	/**
+	* @brief Método para copiar una cola en otra
+	*
+	* @param c Cola a ser copiada
+	*
+	**/
+
 	void copiar(const Cola<T> &c);
 
 public:
