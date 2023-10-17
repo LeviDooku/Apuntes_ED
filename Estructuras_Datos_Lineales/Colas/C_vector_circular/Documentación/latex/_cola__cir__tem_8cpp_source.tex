@@ -1,0 +1,120 @@
+\doxysection{Cola\+\_\+cir\+\_\+tem.\+cpp}
+\hypertarget{_cola__cir__tem_8cpp_source}{}\label{_cola__cir__tem_8cpp_source}\mbox{\hyperlink{_cola__cir__tem_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_cola}{Cola<T>::resize}}(\textcolor{keywordtype}{int}\ n\_tam)\{}
+\DoxyCodeLine{00009\ \ \ \ \ T\ *\ aux\ =\ \textcolor{keyword}{new}\ T[n\_tam];}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{int}\ minimo\ =\ (n\ <\ n\_tam)?\ n:n\_tam;}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ minimo;\ i++)\{}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ aux[i]\ =\ datos[(primera\ +\ i)\ \%\ capacidad];}
+\DoxyCodeLine{00014\ \ \ \ \ \}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ primera\ =\ 0;\ }
+\DoxyCodeLine{00017\ \ \ \ \ ultima\ =\ minimo;}
+\DoxyCodeLine{00018\ \ \ \ \ n\ =\ minimo;}
+\DoxyCodeLine{00019\ \ \ \ \ capacidad\ =\ n\_tam;}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{delete}\ []\ datos;}
+\DoxyCodeLine{00021\ \ \ \ \ datos\ =\ aux;}
+\DoxyCodeLine{00022\ \}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_cola}{Cola<T>::copiar}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_cola}{Cola<T>}}\ \&c)\{}
+\DoxyCodeLine{00027\ \ \ \ \ capacidad\ =\ c.capacidad;}
+\DoxyCodeLine{00028\ \ \ \ \ primera\ =\ c.primera;}
+\DoxyCodeLine{00029\ \ \ \ \ ultima\ =\ c.ultima;}
+\DoxyCodeLine{00030\ \ \ \ \ n\ =\ c.n;}
+\DoxyCodeLine{00031\ \ \ \ \ datos\ =\ \textcolor{keyword}{new}\ T[capacidad];}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ n;\ i++)\{}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ datos[(primera\ +\ i)\ \%\ capacidad]\ =\ c.datos[(primera\ +\ i)\ \%\ capacidad];}
+\DoxyCodeLine{00035\ \ \ \ \ \}}
+\DoxyCodeLine{00036\ \}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \mbox{\hyperlink{class_cola_aa84c0dab75c1367d7ae3de684c80754c}{Cola<T>::Cola}}(\textcolor{keywordtype}{int}\ tam)\{}
+\DoxyCodeLine{00041\ \ \ \ \ capacidad\ =\ tam;}
+\DoxyCodeLine{00042\ \ \ \ \ primera\ =\ 0;}
+\DoxyCodeLine{00043\ \ \ \ \ ultima\ =\ 0;}
+\DoxyCodeLine{00044\ \ \ \ \ n\ =\ 0;}
+\DoxyCodeLine{00045\ \ \ \ \ datos\ =\ \textcolor{keyword}{new}\ T[capacidad];}
+\DoxyCodeLine{00046\ \}}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \mbox{\hyperlink{class_cola_aa84c0dab75c1367d7ae3de684c80754c}{Cola<T>::Cola}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_cola}{Cola<T>}}\ \&c)\{}
+\DoxyCodeLine{00051\ \ \ \ \ copiar(c);}
+\DoxyCodeLine{00052\ \}}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \mbox{\hyperlink{class_cola_af4d55930921c93c626006ba2e842530b}{Cola<T>::\string~Cola}}()\{}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordflow}{if}(datos\ !=\ \textcolor{keyword}{nullptr})\{}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ []\ datos;}
+\DoxyCodeLine{00059\ \ \ \ \ \}}
+\DoxyCodeLine{00060\ \}}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \mbox{\hyperlink{class_cola}{Cola<T>}}\ \&\mbox{\hyperlink{class_cola_a9cdcdb285acd72f75ddab3c3bec8cc41}{Cola<T>::operator\ =}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_cola}{Cola<T>}}\ \&c)\{}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{this}\ !=\ \&c)\{}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(datos\ !=\ \textcolor{keyword}{nullptr})\{}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ []\ datos;}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ copiar(c);}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00070\ \ \ \ \ \}}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordflow}{return}\ *\ \textcolor{keyword}{this};}
+\DoxyCodeLine{00072\ \}}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_cola_a5e185ccd26e183f491e4382e8af1be6e}{Cola<T>::size}}()\textcolor{keyword}{\ const}\{}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordflow}{return}\ n;}
+\DoxyCodeLine{00078\ \}}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_cola_a3ea2836c2eb478f37cae5185d10f850c}{Cola<T>::empty}}()\textcolor{keyword}{\ const}\{}
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordflow}{return}\ n\ ==\ 0;}
+\DoxyCodeLine{00084\ \}}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_cola_adfb9e14ca972c1534b8907850e6a35c5}{Cola<T>::full}}()\textcolor{keyword}{\ const}\{}
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordflow}{return}\ n\ ==\ capacidad;}
+\DoxyCodeLine{00090\ \}}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ T\ \mbox{\hyperlink{class_cola_a90b83b76e4fa6d4111d7ef658376038a}{Cola<T>::front}}()\textcolor{keyword}{\ const}\{}
+\DoxyCodeLine{00095\ \ \ \ \ assert(n\ >\ 0);}
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordflow}{return}\ datos[primera];}
+\DoxyCodeLine{00097\ \}}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_cola_a08df3e3406e8338d7d92b1e5781daaa2}{Cola<T>::push}}(T\ \&dato)\{}
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordflow}{if}(n\ ==\ capacidad)\ \textcolor{comment}{//full()\ ??}}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ resize(2\ *\ capacidad);}
+\DoxyCodeLine{00104\ \ \ \ \ datos[ultima]\ =\ dato;}
+\DoxyCodeLine{00105\ \ \ \ \ ultima\ =\ (ultima\ +\ 1)\ \%\ capacidad;}
+\DoxyCodeLine{00106\ \ \ \ \ n++;}
+\DoxyCodeLine{00107\ \}}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \textcolor{comment}{//No\ entiendo\ muy\ bien}}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_cola_a6664dc0352a6401e2cd068013d7421e3}{Cola<T>::pop}}()\{}
+\DoxyCodeLine{00114\ \ \ \ \ assert(n\ !=\ 0);}
+\DoxyCodeLine{00115\ \ \ \ \ primera\ =\ (primera\ +\ 1)\ \%\ capacidad;}
+\DoxyCodeLine{00116\ \ \ \ \ n-\/-\/;}
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordflow}{if}(n\ <=\ capacidad)}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ resize(capacidad\ /\ 2);}
+\DoxyCodeLine{00119\ \}}
+
+\end{DoxyCode}

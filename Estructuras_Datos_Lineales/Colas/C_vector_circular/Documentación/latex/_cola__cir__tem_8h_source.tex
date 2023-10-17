@@ -1,0 +1,56 @@
+\doxysection{Cola\+\_\+cir\+\_\+tem.\+h}
+\hypertarget{_cola__cir__tem_8h_source}{}\label{_cola__cir__tem_8h_source}\mbox{\hyperlink{_cola__cir__tem_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{comment}{//Haremos\ una\ clase\ plantilla\ que\ implemente\ una\ cola\ como\ vector\ circular}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ COLA}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ COLA}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_cola}{Cola}}\{}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{comment}{//Atributos\ privados}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ T\ *\ datos;}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{int}\ capacidad;\ \textcolor{comment}{//Reservados}}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{int}\ n;\ \textcolor{comment}{//Elementos\ almacenados}}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{int}\ primera,\ ultima;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{comment}{//Métodos\ privados}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ resize(\textcolor{keywordtype}{int}\ n\_tam);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ copiar(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_cola}{Cola<T>}}\ \&c);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{class_cola}{Cola}}(\textcolor{keywordtype}{int}\ tam\ =\ 10);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00062\ \ \ \ \ \mbox{\hyperlink{class_cola}{Cola}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_cola}{Cola<T>}}\ \&c);}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00069\ \ \ \ \ \mbox{\hyperlink{class_cola_af4d55930921c93c626006ba2e842530b}{\string~Cola}}();}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00076\ \ \ \ \ \mbox{\hyperlink{class_cola}{Cola<T>}}\ \&\mbox{\hyperlink{class_cola_a9cdcdb285acd72f75ddab3c3bec8cc41}{operator\ =}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_cola}{Cola<T>}}\ \&c);}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_cola_a5e185ccd26e183f491e4382e8af1be6e}{size}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_cola_a3ea2836c2eb478f37cae5185d10f850c}{empty}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_cola_adfb9e14ca972c1534b8907850e6a35c5}{full}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00109\ \ \ \ \ T\ \mbox{\hyperlink{class_cola_a90b83b76e4fa6d4111d7ef658376038a}{front}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_cola_a08df3e3406e8338d7d92b1e5781daaa2}{push}}(T\ \&dato);}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00124\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_cola_a6664dc0352a6401e2cd068013d7421e3}{pop}}();}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00126\ \};}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00128\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_cola__cir__tem_8cpp}{Cola\_cir\_tem.cpp}}"{}}}
+\DoxyCodeLine{00129\ \textcolor{preprocessor}{\#endif\ COLA}}
+
+\end{DoxyCode}
