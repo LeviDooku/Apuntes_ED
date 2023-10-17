@@ -70,15 +70,42 @@ public:
 	int size() const;
 
 	/**
-	* @brief Constructor de copia
+	* @brief Método que comprueba si la cola está o no vacía
 	*
-	* @param c Cola a ser copiada. Es pasada por referencia.
+	* @return True si la cola está vacía, false en caso contrario
 	**/
 
 	bool empty() const;
+
+	/**
+	* @brief Método que comprueba si la cola está o no llena
+	*
+	* @return True si la cola está llena, false en caso contrario
+	**/
+
 	bool full() const;
+
+	/**
+	* @brief Método que devuelve el frente de la cola
+	*
+	* @return True si la cola está vacía, false en caso contrario
+	**/
+
 	T front() const;
+
+	/**
+	* @brief Método que inserta un elemento al final de la cola
+	*
+	* @param dato Dato a insertar en la cola
+	**/
+
 	void push(T &dato);
+
+	/**
+	* @brief Método que elimina el elemento al frente de la cola
+	*
+	**/
+
 	void pop();
 
 };
