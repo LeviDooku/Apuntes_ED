@@ -1,0 +1,112 @@
+\doxysection{Cola\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_cola}{}\label{class_cola}\index{Cola$<$ T $>$@{Cola$<$ T $>$}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_cola_aea3a971c7c522618f4dc972e8b4ff153}\label{class_cola_aea3a971c7c522618f4dc972e8b4ff153} 
+{\bfseries Cola} ()
+\begin{DoxyCompactList}\small\item\em Constructor vacío. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cola_a034154fc0cf1bf48e6756a736d0ee180}{Cola}} (const \mbox{\hyperlink{class_cola}{Cola}}$<$ T $>$ \&c)
+\begin{DoxyCompactList}\small\item\em Constructor de copia. \end{DoxyCompactList}\item 
+\Hypertarget{class_cola_af4d55930921c93c626006ba2e842530b}\label{class_cola_af4d55930921c93c626006ba2e842530b} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Cola} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cola}{Cola}}$<$ T $>$ \& \mbox{\hyperlink{class_cola_a9cdcdb285acd72f75ddab3c3bec8cc41}{operator=}} (const \mbox{\hyperlink{class_cola}{Cola}}$<$ T $>$ \&c)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operator =. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_cola_a90b83b76e4fa6d4111d7ef658376038a}{front}} () const
+\begin{DoxyCompactList}\small\item\em Método que devuelve el elemento en el frente de la cola. \end{DoxyCompactList}\item 
+\Hypertarget{class_cola_a6664dc0352a6401e2cd068013d7421e3}\label{class_cola_a6664dc0352a6401e2cd068013d7421e3} 
+void {\bfseries pop} ()
+\begin{DoxyCompactList}\small\item\em Método que borra el elemento al principio (frente) de la cola. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cola_a15fd7e661c7c9f2429fdaffacff68146}{push}} (const T \&c)
+\begin{DoxyCompactList}\small\item\em Método que inserta un elemento al final de la cola. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cola_a3ea2836c2eb478f37cae5185d10f850c}{empty}} () const
+\begin{DoxyCompactList}\small\item\em Método que comprueba si una pila está o no vacía. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_cola_a034154fc0cf1bf48e6756a736d0ee180}\label{class_cola_a034154fc0cf1bf48e6756a736d0ee180} 
+\index{Cola$<$ T $>$@{Cola$<$ T $>$}!Cola@{Cola}}
+\index{Cola@{Cola}!Cola$<$ T $>$@{Cola$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Cola()}{Cola()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_cola}{Cola}}$<$ T $>$\mbox{\hyperlink{class_cola}{\+::\+Cola}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_cola}{Cola}}$<$ T $>$ \&}]{c }\end{DoxyParamCaption})}
+
+
+
+Constructor de copia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \doxylink{class_cola}{Cola} a ser copiada \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_cola_a3ea2836c2eb478f37cae5185d10f850c}\label{class_cola_a3ea2836c2eb478f37cae5185d10f850c} 
+\index{Cola$<$ T $>$@{Cola$<$ T $>$}!empty@{empty}}
+\index{empty@{empty}!Cola$<$ T $>$@{Cola$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{class_cola}{Cola}}$<$ T $>$\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Método que comprueba si una pila está o no vacía. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}true\textquotesingle{} si la pila está vacía y \textquotesingle{}false\textquotesingle{} en caso contrario 
+\end{DoxyReturn}
+\Hypertarget{class_cola_a90b83b76e4fa6d4111d7ef658376038a}\label{class_cola_a90b83b76e4fa6d4111d7ef658376038a} 
+\index{Cola$<$ T $>$@{Cola$<$ T $>$}!front@{front}}
+\index{front@{front}!Cola$<$ T $>$@{Cola$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{front()}{front()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \mbox{\hyperlink{class_cola}{Cola}}$<$ T $>$\+::front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Método que devuelve el elemento en el frente de la cola. 
+
+\begin{DoxyReturn}{Returns}
+Elemento en el frente de la cola 
+\end{DoxyReturn}
+\Hypertarget{class_cola_a9cdcdb285acd72f75ddab3c3bec8cc41}\label{class_cola_a9cdcdb285acd72f75ddab3c3bec8cc41} 
+\index{Cola$<$ T $>$@{Cola$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Cola$<$ T $>$@{Cola$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_cola}{Cola}}$<$ T $>$ \& \mbox{\hyperlink{class_cola}{Cola}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_cola}{Cola}}$<$ T $>$ \&}]{c }\end{DoxyParamCaption})}
+
+
+
+Sobrecarga del operator =. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \doxylink{class_cola}{Cola} a la que se asigna \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_cola_a15fd7e661c7c9f2429fdaffacff68146}\label{class_cola_a15fd7e661c7c9f2429fdaffacff68146} 
+\index{Cola$<$ T $>$@{Cola$<$ T $>$}!push@{push}}
+\index{push@{push}!Cola$<$ T $>$@{Cola$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{class_cola}{Cola}}$<$ T $>$\+::push (\begin{DoxyParamCaption}\item[{const T \&}]{c }\end{DoxyParamCaption})}
+
+
+
+Método que inserta un elemento al final de la cola. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Elemento a insertar al final de la cola \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_cola__c_8h}{Cola\+\_\+c.\+h}}\item 
+\mbox{\hyperlink{_cola__c_8cpp}{Cola\+\_\+c.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,110 @@
+\doxysection{Cola\+\_\+c.\+cpp}
+\hypertarget{_cola__c_8cpp_source}{}\label{_cola__c_8cpp_source}\mbox{\hyperlink{_cola__c_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_cola__c_8h}{Cola\_c.h}}"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_cola}{Cola<T>::copiar}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_cola}{Cola<T>}}\ \&c)\{}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordflow}{if}(c.primera\ ==\ \textcolor{keyword}{nullptr})\{}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ primera\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ ultima\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00014\ \ \ \ \ \}}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ primera\ =\ \textcolor{keyword}{new}\ Celda(c.primera\ -\/>\ dato,\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ ultima\ =\ primera;}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ Celda<T>\ *\ q\ =\ c.primera\ -\/>\ sig;}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}(q\ !=\ \textcolor{keyword}{nullptr})\{}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ ultima\ -\/>\ sig\ =\ \textcolor{keyword}{new}\ Celda(q\ -\/>\ dato,\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ ultima\ =\ ultima\ -\/>\ sig;}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ q\ =\ q\ -\/>\ sig;}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00025\ \ \ \ \ \}}
+\DoxyCodeLine{00026\ \}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_cola}{Cola<T>::borrar}}()\{}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordflow}{while}(primera\ !=\ \textcolor{keyword}{nullptr})\{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ Celda\ *\ aux=\ primera;}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ primera\ =\ primera\ -\/>\ sig;}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ aux;}
+\DoxyCodeLine{00035\ \ \ \ \ \}}
+\DoxyCodeLine{00036\ \ \ \ \ ultima\ =\ 0;}
+\DoxyCodeLine{00037\ \}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \mbox{\hyperlink{class_cola_aea3a971c7c522618f4dc972e8b4ff153}{Cola<T>::Cola}}()\{}
+\DoxyCodeLine{00042\ \ \ \ \ primera\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00043\ \ \ \ \ ultima\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \mbox{\hyperlink{class_cola_aea3a971c7c522618f4dc972e8b4ff153}{Cola<T>::Cola}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_cola}{Cola<T>}}\ \&c)\{}
+\DoxyCodeLine{00050\ \ \ \ \ copia(c);}
+\DoxyCodeLine{00051\ \}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \mbox{\hyperlink{class_cola_af4d55930921c93c626006ba2e842530b}{Cola<T>::\string~Cola}}()\{}
+\DoxyCodeLine{00056\ \ \ \ \ borrar();}
+\DoxyCodeLine{00057\ \}}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \mbox{\hyperlink{class_cola}{Cola<T>::Cola}}<T>\ \&operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_cola}{Cola<T>}}\ \&c)\{}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordflow}{if}(\textcolor{keyword}{this}\ !=\ \textcolor{keyword}{nullptr})\{}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ borrar();}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ copiar(c);}
+\DoxyCodeLine{00065\ \ \ \ \ \}}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordflow}{return}\ *\ \textcolor{keyword}{this};}
+\DoxyCodeLine{00068\ \}}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ T\ \mbox{\hyperlink{class_cola_a90b83b76e4fa6d4111d7ef658376038a}{Cola<T>::front}}()\textcolor{keyword}{\ const}\{}
+\DoxyCodeLine{00073\ \ \ \ \ assert(primera\ !=\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordflow}{return}\ primera\ -\/>\ dato;}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \}}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_cola_a6664dc0352a6401e2cd068013d7421e3}{Cola<T>::pop}}()\{}
+\DoxyCodeLine{00081\ \ \ \ \ assert(primera\ !=\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00082\ \ \ \ \ Celda<T>\ aux\ =\ primera;}
+\DoxyCodeLine{00083\ \ \ \ \ primera\ =\ primera\ -\/>\ sig;}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keyword}{delete}\ aux;}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \}}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_cola_a15fd7e661c7c9f2429fdaffacff68146}{Cola<T>::push}}(\textcolor{keyword}{const}\ T\&\ c)\{}
+\DoxyCodeLine{00091\ \ \ \ \ Celda<T>\ *\ aux\ =\ \textcolor{keyword}{new}\ Celda(c,\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordflow}{if}(primera\ ==\ \textcolor{keyword}{nullptr})\{}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ primera\ =\ aux;}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ ultima\ =\ aux;}
+\DoxyCodeLine{00095\ \ \ \ \ \}}
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ ultima\ -\/>\ sig\ =\ aux;}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ ultima\ =\ aux;}
+\DoxyCodeLine{00099\ \ \ \ \ \}}
+\DoxyCodeLine{00100\ \}}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_cola_a3ea2836c2eb478f37cae5185d10f850c}{Cola<T>::empty}}()\textcolor{keyword}{\ const}\{}
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keywordflow}{return}\ primera\ ==\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00106\ \}}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ }
+
+\end{DoxyCode}

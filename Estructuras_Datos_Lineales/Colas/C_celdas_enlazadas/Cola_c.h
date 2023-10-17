@@ -48,6 +48,7 @@ public:
 	* @brief Constructor vacío
 	*
 	**/
+	
 	Cola();
 
 	/**
