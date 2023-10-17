@@ -51,7 +51,9 @@ Como indica en el nombre del repositorio, el código presente en estos archivos 
 	- [P_clase_vector](Estructuras_Datos_Lineales/Pilas/P_clase_vector): Implementación de una clase template Pila, cuyos métodos están implementados usando la clase `vector`. Se incluye un archivo `main.cpp` con un programa simple de prueba.
 	- [P_celdas_Enlazadas](Estructuras_Datos_Lineales/Pilas/P_celdas_Enlazadas): Implementación de una pila que almacena tipos `char` mediante celdas enlazadas.
 
-- Colas  
+- Colas:  
+
 	- [C_celdas_enlazadas](Estructuras_Datos_Lineales/Colas/P_celdas_enlazadas): Implementación de una clase template Cola que usa celdas enlazadas.
 	- [C_celdas_enlazadas](Estructuras_Datos_Lineales/Colas/P_celdas_enlazadas): Implementación de una clase template Cola que usa un vector circular (hay cosas que aún no entiendo).
+	- [`C_prioridad.cpp`](Estructuras_Datos_Lineales/Colas/C_prioridad/C_prioridad.cpp): Ejemplo de un programa que usa la clase "priority_queue" de la STL para generar dos colas con valores enteros introducidos por el usuario
 
