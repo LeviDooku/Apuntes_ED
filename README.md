@@ -52,5 +52,5 @@ Como indica en el nombre del repositorio, el código presente en estos archivos 
 	- [P_celdas_Enlazadas](Estructuras_Datos_Lineales/Pilas/P_celdas_Enlazadas): Implementación de una pila que almacena tipos `char` mediante celdas enlazadas.
 
 - Colas  
-	-[C_celdas_enlazadas](Estructuras_Datos_Lineales/Colas/P_celdas_enlazadas): Implementación de una clase template Cola que usa celdas enlazadas.
+	- [C_celdas_enlazadas](Estructuras_Datos_Lineales/Colas/P_celdas_enlazadas): Implementación de una clase template Cola que usa celdas enlazadas.
 
