@@ -53,4 +53,5 @@ Como indica en el nombre del repositorio, el código presente en estos archivos 
 
 - Colas  
 	- [C_celdas_enlazadas](Estructuras_Datos_Lineales/Colas/P_celdas_enlazadas): Implementación de una clase template Cola que usa celdas enlazadas.
+	- [C_celdas_enlazadas](Estructuras_Datos_Lineales/Colas/P_celdas_enlazadas): Implementación de una clase template Cola que usa un vector circular (hay cosas que aún no entiendo).
 
