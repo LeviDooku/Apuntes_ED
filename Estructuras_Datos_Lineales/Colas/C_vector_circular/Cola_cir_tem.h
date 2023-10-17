@@ -32,6 +32,7 @@ public:
 	* @brief Constructor con parámetros por defecto
 	*
 	* @param tam Parámetro por defecto. Si no se especifica, su valor será: 10.
+	*
 	**/
 
 	Cola(int tam = 10);
@@ -39,13 +40,41 @@ public:
 	/**
 	* @brief Constructor de copia
 	*
-	* @param c Cola a ser copiada. Es pasada por referencia
+	* @param c Cola a ser copiada.
+	*
 	**/
 
 	Cola(const Cola<T> &c);
+
+	/**
+	* @brief Destructor
+	*
+	**/
+
 	~Cola();
+
+	/**
+	* @brief Sobrecarga del operator de asignación
+	*
+	**/
+
 	Cola<T> &operator =(const Cola<T> &c);
+
+	/**
+	* @brief Método que devuelve el tamaño de la cola (número de elementos en ella)
+	*
+	* @return Número de elementos de la cola
+	*
+	**/
+
 	int size() const;
+
+	/**
+	* @brief Constructor de copia
+	*
+	* @param c Cola a ser copiada. Es pasada por referencia.
+	**/
+
 	bool empty() const;
 	bool full() const;
 	T front() const;
