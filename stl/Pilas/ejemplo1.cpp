@@ -1,11 +1,13 @@
 //Ejemplo de programa para familiarizarse con la clase vector
 
 /*
+
 Métodos usados:
 
 push_back(): agregar un elemento
 back(): mostrar el elemento del final
 size(): tamaño del vector
+
 */
 
 #include <iostream>

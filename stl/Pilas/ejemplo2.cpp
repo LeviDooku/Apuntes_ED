@@ -1,4 +1,6 @@
-//Ejemplo de programa para familiarizarse con la clase stack
+//Programa que funciona de la misma forma que el de P_clase_vector/main.cpp, pero usando clase stack
+
+//(Consultar detalles del funcionamiento en el archivo antes mencionado)
 
 #include <iostream>
 #include <stack>
@@ -6,7 +8,7 @@
 using namespace std;
 
 int main() {
-    stack<char> pila_char;
+    stack<char> pila_char; //Pila de caracteres
     char dato;
 
     cout << "Inserte una frase: " << endl;
