@@ -59,4 +59,8 @@ Como indica en el nombre del repositorio, el código presente en estos archivos 
 
 ## Tema 5 (stl)
 
+- [Pilas](stl/Pilas): pilas usando la clase `vector` y `stack` de la stl
+
+	- [ejemplo1.cpp](stl/Pilas/ejemplo1.cpp): Implementación de una pila usando la clase vector de la stl  
+	- [ejemplo1.cpp](stl/Pilas/ejemplo1.cpp): Implementación de una pila usando la clase vector de la stl  
 
