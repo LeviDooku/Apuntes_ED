@@ -21,7 +21,9 @@ Compilación: Debido a que el fichero `.h` está incluyendo a su vez el fichero 
 
 - Origen del código:
 
-Como indica en el nombre del repositorio, el código presente en estos archivos no es mío. Lo he sacado de las transparencias/apuntes y diversos recursos que se nos brindan en esta asignatura. El objetivo de este repositorio es meramente formar un recopilatorio.
+Como indica en el nombre del repositorio, el código presente en estos archivos no es mío. Lo he sacado de las transparencias/apuntes y diversos recursos que se nos brindan en esta asignatura. El objetivo de este repositorio es meramente formar un recopilatorio.  
+
+También se incluye algunas soluciones a exámenes de prácticas resueltos por mí, esto quiere decir que no tienen por qué estar perfectos
 
 ## Tema 1 (Eficiencia)
 
@@ -65,7 +67,7 @@ Como indica en el nombre del repositorio, el código presente en estos archivos 
 	- [`ejemplo2.cpp`](stl/Pilas/ejemplo1.cpp): Mismo programa que el implementado en la pila con clase vector, pero usando la clase stack ([Programa referenciado](Estructuras_Datos_Lineales/Pilas/P_clase_vector/main.cpp)) 
 	- [`ejemplo3.cpp`](stl/Pilas/ejemplo1.cpp): Implementación de dos pilas en las que se usan distintos métodos como swap().
 
-- [Colas](stl/Colas): colas y colas con prioridad de la clase `queue` 
+- [Colas](stl/Colas): colas y colas con prioridad de la clase `queue` de la stl
 
 	- [`ejemplo1.cpp`](stl/Colas/ejemplo1.cpp): Ejemplo básico de utilización de las colas
 	- [`ejemplo2.cpp`](stl/Colas/ejemplo2.cpp): Ejemplo de los apuntes con alguna modificación
@@ -73,5 +75,14 @@ Como indica en el nombre del repositorio, el código presente en estos archivos 
 	- [`examen1.cpp`](stl/Colas/examen1.cpp)
 	- [`examen2.cpp`](stl/Colas/examen2.cpp)
 	- [`examen3.cpp`](stl/Colas/examen3.cpp)
+
+- [Listas](stl/Listas): listas usando la clase `list` de la stl
+	- [`ejemplo1.cpp`](stl/Listas/ejemplo1.cpp): Ejemplo básico de utilización de las listas
+	- [`ejemplo2.cpp`](stl/Listas/ejemplo2.cpp): Comprobar si una lista de caracteres es palíndromo, se usan iteradores
+	- [`ejemplo3.cpp`](stl/Listas/ejemplo3.cpp): Ejemplo de uso de los método assign, insert, swap, erase y clear
+	- [`ejemplo4.cpp`](stl/Listas/ejemplo4.cpp): Ejercicio, eliminar pares de una lista
+	- [`ejemplo5.cpp`](stl/Listas/ejemplo5.cpp): Ejercicio, dadas dos listas de enteros devuelva una tercera con los elementos de ambas concatenadas
+	- [`ejemplo6.cpp`](stl/Listas/ejemplo6.cpp): Ejemplo de uso del método splice
+	- [`ejemplo7.cpp`](stl/Listas/ejemplo7.cpp): Ejercicio, dada dos listas de enteros, mover los pares a una lista, quedando una de pares e impares
 
 
