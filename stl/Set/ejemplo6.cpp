@@ -23,8 +23,7 @@ set<int> interseccion(set<int> &s1, set<int> &s2){
 int main(){
 
     set<int> secuencia1, secuencia2;
-    //set<int>::const_iterator cit1, cit2;
-
+    
     int contador = 0;
 
     cout << "Ingrese cuántos datos desea insertar (secuencia 1): ";

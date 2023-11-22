@@ -43,6 +43,4 @@ int main(){
 
     for(const auto& numero : result)
         cout << numero << " ";
-
-
 }

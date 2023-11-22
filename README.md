@@ -84,13 +84,18 @@ También se incluye algunas soluciones a exámenes de prácticas resueltos por m
 	- [`ejemplo5.cpp`](stl/Listas/ejemplo5.cpp): Ejercicio, dadas dos listas de enteros devuelva una tercera con los elementos de ambas concatenadas
 	- [`ejemplo6.cpp`](stl/Listas/ejemplo6.cpp): Ejemplo de uso del método splice
 	- [`ejemplo7.cpp`](stl/Listas/ejemplo7.cpp): Ejercicio, dada dos listas de enteros, mover los pares a una lista, quedando una de pares e impares
+
 - [Set y multiset](stl/Set): conjuntos ordenados usando la clase `set` de la stl
 	- [`ejemplo1.cpp`](stl/Set/ejemplo1.cpp): Familiarizarse con la estructura set, que solo almacena claves únicas
 	- [`ejemplo2.cpp`](stl/Set/ejemplo2.cpp): Ejemplo de uso del método find
 	- [`ejemplo3.cpp`](stl/Set/ejemplo3.cpp): Introducción a las diferencias entre set y multiset
 	- [`ejemplo4.cpp`](stl/Set/ejemplo4.cpp): Cambiar el orden de ordenación por defecto (poco relevante)
 	- [`ejemplo5.cpp`](stl/Set/ejemplo5.cpp): Ejemplo de uso del método equal range
-	- [`ejemplo1.cpp`](stl/Set/ejemplo1.cpp)
+	- [`ejemplo6.cpp`](stl/Set/ejemplo6.cpp): Crear una función que devuelva la intersección de dos conjuntos
+	- [`ejemplo7.cpp`](stl/Set/ejemplo7.cpp): Dados dos conjuntos, obtener la unión de ambos
+	- [`ejemplo8.cpp`](stl/Set/ejemplo8.cpp): Sobrecargar el operator + para obtener la intersección de dos conjuntos
+	- [`pre1.cpp`](stl/Set/pre1.cpp): (ejercicio preparatorio) crear una función para decidir si dos conjuntos son o no complementarios
+	- [`pre4.cpp`](stl/Set/pre4.cpp): (ejercicio preparatorio) crear una función para obtener un mapa con clave de enteros y valor asociado el número de veces que se repite esta clave.
 
 
 
