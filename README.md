@@ -65,3 +65,11 @@ Como indica en el nombre del repositorio, el código presente en estos archivos 
 	- [`ejemplo2.cpp`](stl/Pilas/ejemplo1.cpp): Mismo programa que el implementado en la pila con clase vector, pero usando la clase stack ([Programa referenciado](Estructuras_Datos_Lineales/Pilas/P_clase_vector/main.cpp)) 
 	- [`ejemplo3.cpp`](stl/Pilas/ejemplo1.cpp): Implementación de dos pilas en las que se usan distintos métodos como swap().
 
+- [Colas](stl/Colas): colas y colas con prioridad de la clase `queue` 
+
+	- [`ejemplo1.cpp`](stl/Colas/ejemplo1.cpp): Ejemplo básico de utilización de las colas
+	- [`ejemplo2.cpp`](stl/Colas/ejemplo2.cpp): Ejemplo de los apuntes con alguna modificación
+	- [`ejemplo3.cpp`](stl/Colas/ejemplo3.cpp): Ejemplo de uso de una cola con prioridad
+	
+
+
