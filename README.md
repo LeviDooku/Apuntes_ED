@@ -76,7 +76,7 @@ También se incluye algunas soluciones a exámenes de prácticas resueltos por m
 	- [`examen2.cpp`](stl/Colas/examen2.cpp)
 	- [`examen3.cpp`](stl/Colas/examen3.cpp)
 
-- [Listas](stl/Listas): listas usando la clase `list` de la STL [Página oficial](https://cplusplus.com/reference/list/list/?kw=list)
+- [Listas](stl/Listas): listas usando la clase `list` de la STL: ([Página oficial](https://cplusplus.com/reference/list/list/?kw=list))
 	- [`ejemplo1.cpp`](stl/Listas/ejemplo1.cpp): Ejemplo básico de utilización de las listas
 	- [`ejemplo2.cpp`](stl/Listas/ejemplo2.cpp): Comprobar si una lista de caracteres es palíndromo, se usan iteradores
 	- [`ejemplo3.cpp`](stl/Listas/ejemplo3.cpp): Ejemplo de uso de los método assign, insert, swap, erase y clear
