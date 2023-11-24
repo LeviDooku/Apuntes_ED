@@ -83,7 +83,7 @@ También se incluye algunas soluciones a exámenes de prácticas resueltos por m
 	- [`ejemplo6.cpp`](stl/Listas/ejemplo6.cpp): Ejemplo de uso del método splice
 	- [`ejemplo7.cpp`](stl/Listas/ejemplo7.cpp): Ejercicio, dada dos listas de enteros, mover los pares a una lista, quedando una de pares e impares
 
-- [Set y multiset](stl/Set): conjuntos ordenados usando la clase `set` de la stl
+- [Set y multiset](stl/Set): conjuntos ordenados usando la clase `set` de la STL: ([Página oficial](https://cplusplus.com/reference/set/set/?kw=set))
 	- [`ejemplo1.cpp`](stl/Set/ejemplo1.cpp): Familiarizarse con la estructura set, que solo almacena claves únicas
 	- [`ejemplo2.cpp`](stl/Set/ejemplo2.cpp): Ejemplo de uso del método find
 	- [`ejemplo3.cpp`](stl/Set/ejemplo3.cpp): Introducción a las diferencias entre set y multiset
