@@ -96,9 +96,9 @@ También se incluye algunas soluciones a exámenes de prácticas resueltos por m
 	- [`pre4.cpp`](stl/Set/pre4.cpp): (ejercicio preparatorio) crear una función para obtener un mapa con clave de enteros y valor asociado el número de veces que se repite esta clave.
 
 - [Map y multimap](stl/Map): ED basada en parejas (clave y valor asociado). Se usa la clase `map` de la STL: ([Página oficial](https://cplusplus.com/reference/map/map/?kw=map))
-	- [`ejemplo1.cpp`](stl/Set/ejemplo1.cpp): Introducción a la clase map
-	- [`pre3.cpp`](stl/Set/pre3.cpp): (ejercicio preparatorio) contar las vocales en palabras
-	- [`pre2.cpp`](stl/Set/pre2.cpp): (ejercicio preparatorio) crear un mapa a partir de un multimap
+	- [`ejemplo1.cpp`](stl/Set/ejemplo1.cpp): Introducción a la clase map.
+	- [`pre3.cpp`](stl/Set/pre3.cpp): (ejercicio preparatorio) contar las vocales en palabras.
+	- [`pre2.cpp`](stl/Set/pre2.cpp): (ejercicio preparatorio) crear un mapa a partir de un multimap.
 
 
 
