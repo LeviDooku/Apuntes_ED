@@ -15,7 +15,7 @@ En el fichero `.h`: Antes de empezar con la declaración de la clase ponemos la 
 
 En el fichero `.cpp`: Debemos incluir el fichero `.h` con `#include "Ejemplo.h"` al principio. En cada función que implementemos debemos incluir `template <class T>`. En la cabecera de cada función y constructores incluimos el nombre de la clase de esta forma: `void Ejemplo<T>::sample()`.  
 
-En el fichero que contenga `main`: Incluimos el fichero `.h`.  
+En el fichero que contenga `main`: Incluimos el fichero `.h`  
 
 Compilación: Debido a que el fichero `.h` está incluyendo a su vez el fichero con la implementación de las funciones, no es necesario compilar el último mencionado. Es decir, si tenemos un proyecto que contiene: `Ejemplo.h`, `Ejemplo.cpp` y `main.cpp`, podemos compilar haciendo simplemente: `g++ main.cpp -o programa`.
 
