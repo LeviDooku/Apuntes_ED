@@ -17,7 +17,7 @@ En el fichero `.cpp`: Debemos incluir el fichero `.h` con `#include "Ejemplo.h"`
 
 En el fichero que contenga `main`: Incluimos el fichero `.h`  
 
-Compilación: Debido a que el fichero `.h` está incluyendo a su vez el fichero con la implementación de las funciones, no es necesario compilar el último mencionado. Es decir, si tenemos un proyecto que contiene: `Ejemplo.h`, `Ejemplo.cpp` y `main.cpp`, podemos compilar haciendo simplemente: `g++ main.cpp -o programa`.
+Compilación: Debido a que el fichero `.h` está incluyendo a su vez el fichero con la implementación de las funciones, no es necesario compilar el último mencionado. Es decir, si tenemos un proyecto que contiene: `Ejemplo.h`, `Ejemplo.cpp` y `main.cpp`, podemos compilar haciendo simplemente: `g++ main.cpp -o programa`
 
 - Origen del código:
 
