@@ -81,7 +81,7 @@ También se incluye algunas soluciones a exámenes de prácticas resueltos por m
 	- [`ejemplo4.cpp`](stl/Listas/ejemplo4.cpp): Ejercicio, eliminar pares de una lista
 	- [`ejemplo5.cpp`](stl/Listas/ejemplo5.cpp): Ejercicio, dadas dos listas de enteros devuelva una tercera con los elementos de ambas concatenadas
 	- [`ejemplo6.cpp`](stl/Listas/ejemplo6.cpp): Ejemplo de uso del método splice
-	- [`ejemplo7.cpp`](stl/Listas/ejemplo7.cpp): Ejercicio, dada dos listas de enteros, mover los pares a una lista, quedando una de pares e impares
+	- [`ejemplo7.cpp`](stl/Listas/ejemplo7.cpp): Ejercicio, dada dos listas de enteros, mover los pares a una lista, quedando una de pares e impares.
 
 - [Set y multiset](stl/Set): conjuntos ordenados usando la clase `set` de la STL: ([Página oficial](https://cplusplus.com/reference/set/set/?kw=set))
 	- [`ejemplo1.cpp`](stl/Set/ejemplo1.cpp): Familiarizarse con la estructura set, que solo almacena claves únicas.
