@@ -23,7 +23,7 @@ Compilación: Debido a que el fichero `.h` está incluyendo a su vez el fichero 
 
 Como indica en el nombre del repositorio, el código presente en estos archivos no es mío. Lo he sacado de las transparencias/apuntes y diversos recursos que se nos brindan en esta asignatura. El objetivo de este repositorio es meramente formar un recopilatorio.  
 
-También se incluye algunas soluciones a exámenes de prácticas resueltos por mí, esto quiere decir que no tienen por qué estar perfectos
+También se incluye algunas soluciones a exámenes de prácticas resueltos por mí, esto quiere decir que no tienen por qué estar perfectos.
 
 ## Tema 1 (Eficiencia)
 
