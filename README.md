@@ -67,9 +67,9 @@ También se incluye algunas soluciones a exámenes de prácticas resueltos por m
 	- [`ejemplo3.cpp`](stl/Pilas/ejemplo1.cpp): Implementación de dos pilas en las que se usan distintos métodos como swap().
 
 - [Colas](stl/Colas): colas y colas con prioridad de la clase `queue` de la STL: ([Página oficial](https://cplusplus.com/reference/queue/queue/?kw=queue))
-	- [`ejemplo1.cpp`](stl/Colas/ejemplo1.cpp): Ejemplo básico de utilización de las colas
-	- [`ejemplo2.cpp`](stl/Colas/ejemplo2.cpp): Ejemplo de los apuntes con alguna modificación
-	- [`ejemplo3.cpp`](stl/Colas/ejemplo3.cpp): Ejemplo de uso de una cola con prioridad
+	- [`ejemplo1.cpp`](stl/Colas/ejemplo1.cpp): Ejemplo básico de utilización de las colas.
+	- [`ejemplo2.cpp`](stl/Colas/ejemplo2.cpp): Ejemplo de los apuntes con alguna modificación.
+	- [`ejemplo3.cpp`](stl/Colas/ejemplo3.cpp): Ejemplo de uso de una cola con prioridad.
 	- [`examen1.cpp`](stl/Colas/examen1.cpp)
 	- [`examen2.cpp`](stl/Colas/examen2.cpp)
 	- [`examen3.cpp`](stl/Colas/examen3.cpp)
