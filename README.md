@@ -62,7 +62,7 @@ También se incluye algunas soluciones a exámenes de prácticas resueltos por m
 ## Tema 5 (stl)
 
 - [Pilas](stl/Pilas): pilas usando la clase `vector` y `stack` de la STL: ([Página oficial](https://cplusplus.com/reference/stack/stack/?kw=stack))
-	- [`ejemplo1.cpp`](stl/Pilas/ejemplo1.cpp): Implementación de una pila usando la clase vector de la stl  
+	- [`ejemplo1.cpp`](stl/Pilas/ejemplo1.cpp): Implementación de una pila usando la clase vector de la stl.  
 	- [`ejemplo2.cpp`](stl/Pilas/ejemplo1.cpp): Mismo programa que el implementado en la pila con clase vector, pero usando la clase stack ([Programa referenciado](Estructuras_Datos_Lineales/Pilas/P_clase_vector/main.cpp)) 
 	- [`ejemplo3.cpp`](stl/Pilas/ejemplo1.cpp): Implementación de dos pilas en las que se usan distintos métodos como swap().
 
