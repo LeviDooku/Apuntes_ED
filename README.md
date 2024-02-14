@@ -77,7 +77,7 @@ También se incluye algunas soluciones a exámenes de prácticas resueltos por m
 - [Listas](stl/Listas): listas usando la clase `list` de la STL: ([Página oficial](https://cplusplus.com/reference/list/list/?kw=list))
 	- [`ejemplo1.cpp`](stl/Listas/ejemplo1.cpp): Ejemplo básico de utilización de las listas.
 	- [`ejemplo2.cpp`](stl/Listas/ejemplo2.cpp): Comprobar si una lista de caracteres es palíndromo, se usan iteradores
-	- [`ejemplo3.cpp`](stl/Listas/ejemplo3.cpp): Ejemplo de uso de los método assign, insert, swap, erase y clear
+	- [`ejemplo3.cpp`](stl/Listas/ejemplo3.cpp): Ejemplo de uso de los método assign, insert, swap, erase y clear.
 	- [`ejemplo4.cpp`](stl/Listas/ejemplo4.cpp): Ejercicio, eliminar pares de una lista.
 	- [`ejemplo5.cpp`](stl/Listas/ejemplo5.cpp): Ejercicio, dadas dos listas de enteros devuelva una tercera con los elementos de ambas concatenadas
 	- [`ejemplo6.cpp`](stl/Listas/ejemplo6.cpp): Ejemplo de uso del método splice.
